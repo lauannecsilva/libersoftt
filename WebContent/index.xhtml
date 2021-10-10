@@ -4,8 +4,7 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui"
-	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
@@ -15,17 +14,23 @@
 	
 	<h:body styleClass="body">
 		<h:form id="formBibliotecario" styleClass="login">
-			<div class="p-formgroup-inline loginConteudo ">
-				<h1 >Login</h1>
+			<div class="loginConteudo ">
 				<div class="p-field">
-					<h:outputLabel value="CPF/Matricula" styleClass="fontLetra" />
-					<h:inputText id="campoMatricula" styleClass="inputText"/>
+					<h:inputText styleClass="loginInfo inputText" a:placeholder="Matrícula ou CPF"/>
 				</div>
 				<div class="p-field">
-					<h:outputLabel value="senha"  />
-					<h:inputText id="campoSenha" styleClass="inputText" />
+					<h:inputSecret id="campoSenha" styleClass="inputText"  a:placeholder="Senha"/>
 				</div>
-				<h:commandButton value="Entrar" styleClass="botaoEntrar"/>
+				
+				<h:commandButton value="Entrar" styleClass="loginButton mainbtn"/>
+				
+				<a href="https://google.com" target="_blank" class="forgotPassword">Esqueceu a senha?</a>
+
+				<f:verbatim><hr style="margin-top:20px;margin-bottom:20px;"/></f:verbatim>
+				
+				<h:commandButton value="Criar nova conta" styleClass="newAccountButton mainbtn"/>
+				
+				
 			</div>
 			
 			
