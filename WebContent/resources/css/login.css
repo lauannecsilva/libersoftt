@@ -1,0 +1,68 @@
+@charset "ISO-8859-1";
+@font-face {
+font-family: "Roboto"; src: url("#{resource['fonts:Roboto-Regular.ttf']}") format("truetype");
+}
+@font-face {
+font-family: "Roboto"; src: url("#{resource['fonts:Roboto-Bold.ttf']}") format("truetype");
+}
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	color: #007A78;
+	text-align: center;
+}
+
+.p-formgroup-inline {
+	border-radius: 10px;
+	background-color: #f2f2f2;
+	padding: 20px
+}
+
+.inputText {
+	width: 100%;
+	padding: 12px 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.botaoEntrar {
+	width: 100%;
+	background-color: #007A78;
+	color: white;
+	padding: 12px 12px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.login{
+	position: relative;
+	
+    
+}
+.loginConteudo{
+	width: 500px;
+	height:400px;
+	display: block;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.body{
+	background-color: #007A78;
+}
+	
+
