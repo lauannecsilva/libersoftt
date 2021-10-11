@@ -25,13 +25,13 @@
 				<h:inputText styleClass="loginInput inputText" a:placeholder="Matrícula ou CPF" a:autofocus="true"/>
 				<h:inputSecret styleClass="inputText"  a:placeholder="Senha"/>
 				
-				<h:commandButton value="Entrar" styleClass="loginButton mainbtn"/>
+				<h:button value="Entrar" styleClass="loginButton mainbtn" outcome="index.xhtml"/>
 				
 				<a href="https://google.com" target="_blank" class="forgotPassword">Esqueceu a senha?</a>
 	
 				<f:verbatim><hr/></f:verbatim>
 				
-				<h:commandButton value="Criar nova conta" styleClass="newAccountButton mainbtn"/>
+				<h:button value="Criar nova conta" styleClass="newAccountButton mainbtn" outcome="cadastro.xhtml"/>
 			</h:form>
 		
 		</h:panelGrid>
