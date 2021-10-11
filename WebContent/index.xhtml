@@ -18,16 +18,17 @@
 			
 			<h:form styleClass="description">
 				<h:graphicImage library="imgs" name="libersoft_logo.png" styleClass="logo"/>
-				<p>A LiberSoft é uma plataforma de gestão de bibliotecas que conta com um serviço integrado de distribuição digital de eBooks.</p>
+				<f:verbatim><br/></f:verbatim>
+				<h:outputLabel value="A LiberSoft é uma plataforma de gestão de bibliotecas que conta com um serviço integrado de distribuição digital de eBooks."/>
 			</h:form>
 			
-			<h:form id="formBibliotecario" styleClass="login">
-				<h:inputText styleClass="loginInput inputText" a:placeholder="Matrícula ou CPF" a:autofocus="true"/>
-				<h:inputSecret styleClass="inputText"  a:placeholder="Senha"/>
+			<h:form styleClass="login">
+				<p:inputMask styleClass="loginInput inputText" value="#{Aluno.cpf}" mask="999.999.999-99" a:placeholder="CPF" a:autofocus="true"/>
+				<h:inputSecret styleClass="inputText" value="#{Aluno.senha}" a:placeholder="Senha"/>
 				
-				<h:button value="Entrar" styleClass="loginButton mainbtn" outcome="index.xhtml"/>
+				<h:commandButton value="Entrar" action="LoginDAO" styleClass="loginButton mainbtn"/>
 				
-				<a href="https://google.com" target="_blank" class="forgotPassword">Esqueceu a senha?</a>
+				<a href="https://google.com" target="_blank">Esqueceu a senha?</a>
 	
 				<f:verbatim><hr/></f:verbatim>
 				
