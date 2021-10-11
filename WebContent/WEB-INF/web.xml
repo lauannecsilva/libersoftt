@@ -11,7 +11,7 @@
   </welcome-file-list>
   <context-param>
   	<param-name>primefaces.THEME</param-name>
-  	<param-value>luna-blue</param-value>
+  	<param-value>nova-light</param-value>
   </context-param>
   <servlet>
     <servlet-name>Faces Servlet</servlet-name>

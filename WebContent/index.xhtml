@@ -4,40 +4,36 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-		<title>Login</title>
-	<h:outputStylesheet library="css" name="login.css"/> 
-	</h:head>	
+	<title>LiberSoft</title>
+	<h:outputStylesheet library="css" name="login.css"/>
+</h:head>	
 	
 	<h:body styleClass="body">
-		<h:form id="formBibliotecario" styleClass="login">
-			<div class="loginConteudo ">
-				<div class="p-field">
-					<h:inputText styleClass="loginInfo inputText" a:placeholder="Matrícula ou CPF"/>
-				</div>
-				<div class="p-field">
-					<h:inputSecret id="campoSenha" styleClass="inputText"  a:placeholder="Senha"/>
-				</div>
+		<h:panelGrid columns="2" styleClass="conteudo" cellspacing="90">			
+			
+			<h:form styleClass="description">
+				<h:graphicImage library="imgs" name="libersoft_logo.png" styleClass="logo"/>
+				<p>A LiberSoft é uma plataforma de gestão de bibliotecas que conta com um serviço integrado de distribuição digital de eBooks.</p>
+			</h:form>
+			
+			<h:form id="formBibliotecario" styleClass="login">
+				<h:inputText styleClass="loginInput inputText" a:placeholder="Matrícula ou CPF" a:autofocus="true"/>
+				<h:inputSecret styleClass="inputText"  a:placeholder="Senha"/>
 				
 				<h:commandButton value="Entrar" styleClass="loginButton mainbtn"/>
 				
 				<a href="https://google.com" target="_blank" class="forgotPassword">Esqueceu a senha?</a>
-
-				<f:verbatim><hr style="margin-top:20px;margin-bottom:20px;"/></f:verbatim>
+	
+				<f:verbatim><hr/></f:verbatim>
 				
 				<h:commandButton value="Criar nova conta" styleClass="newAccountButton mainbtn"/>
-				
-				
-			</div>
-			
-			
-
-		</h:form>
+			</h:form>
+		
+		</h:panelGrid>
 	</h:body>
-
-
-
 </html>
