@@ -10,7 +10,7 @@
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<title>LiberSoft</title>
-	<h:outputStylesheet library="css" name="index.css"/>
+	<h:outputStylesheet library="css" name="loginAdmin.css"/>
 </h:head>	
 	
 	<h:body styleClass="body">
@@ -23,8 +23,8 @@
 			</h:form>
 			
 			<h:form styleClass="login">
-				<p:inputMask styleClass="loginInput inputText" value="#{Aluno.cpf}" mask="999.999.999-99" a:placeholder="CPF" a:autofocus="true"/>
-				<h:inputSecret styleClass="inputText" value="#{Aluno.senha}" a:placeholder="Senha"/>
+				<p:inputText styleClass="inputText" value="#{Adm.login}" a:placeholder="Usuário(a)" a:autofocus="true"/>
+				<h:inputSecret styleClass="passwordInput inputText" value="#{Adm.senha}" a:placeholder="Senha"/>
 				
 				<h:commandButton value="Entrar" action="LoginDAO" styleClass="loginButton mainbtn"/>
 				
@@ -32,7 +32,7 @@
 	
 				<f:verbatim><hr/></f:verbatim>
 				
-				<h:button value="Entrar como administrador(a)" styleClass="adminButton mainbtn" outcome="loginAdmin.xhtml"/>
+				<h:button value="Voltar" styleClass="backButton mainbtn" outcome="index.xhtml"/>
 			</h:form>
 		
 		</h:panelGrid>

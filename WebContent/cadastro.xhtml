@@ -17,14 +17,16 @@
 		<h:panelGrid columns="1" styleClass="conteudo">			
 	
 				<h:form styleClass="cadastro">
+				
 					<h:panelGroup layout="block" styleClass="cadastroTopo">
 						<h:outputLabel value="Cadastre-se" styleClass="title"/>
 						<f:verbatim><br/></f:verbatim>
 						<h:outputLabel value="A LiberSoft é a plataforma certa para a sua biblioteca digital." styleClass="subtitle"/>
 						<f:verbatim><hr/></f:verbatim>
 					</h:panelGroup>
-					<p:inputMask styleClass="inputText" value="#{Aluno.nome}" a:placeholder="Nome Completo"/>
-					<p:inputMask styleClass="inputText" value="#{Aluno.email}" a:placeholder="Email"/>
+					
+					<p:inputText styleClass="inputText" value="#{Aluno.nome}" a:placeholder="Nome Completo"/>
+					<p:inputText styleClass="inputText" value="#{Aluno.email}" a:placeholder="Email"/>
 					<p:inputMask styleClass="inputText" value="#{Aluno.telefone}" mask="(99) 9 9999-9999" a:placeholder="Celular"/>
 					<p:inputMask styleClass="inputText" value="#{Aluno.cpf}" mask="999.999.999-99" a:placeholder="CPF"/>
 					<h:inputSecret styleClass="inputText" value="#{Aluno.senha}" a:placeholder="Senha"/>
@@ -40,6 +42,7 @@
 					<h:commandButton value="Cadastre-se" action="CadastroDAO" styleClass="signupButton mainbtn"/>
 					
 					<a href="index.xhtml">Já tem uma conta? Entre agora!</a>
+					
 				</h:form>
 				
 			</h:panelGrid>

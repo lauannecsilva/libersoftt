@@ -126,17 +126,17 @@ hr {
 	background-color: #012c59;
 }
 
-.newAccountButton {
+.adminButton {
 	letter-spacing: 0.03em;
 	font-size: 18px;
 	background-color: #b3995d;
 }
 
-.newAccountButton:hover {
+.adminButton:hover {
 	background-color: #a68e56;
 }
 
-.newAccountButton:active {
+.adminButton:active {
 	background-color: #998350;
 }
 /* BUTTONS SETTINGS */
