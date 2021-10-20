@@ -1,4 +1,4 @@
-package br.com.libersoftt.entity;
+package entity;
 
 public class Endereco {
 

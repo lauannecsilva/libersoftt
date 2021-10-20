@@ -1,4 +1,4 @@
-package br.com.libersoftt.entity;
+package entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,8 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import br.com.libersoftt.entity.Bibliotecario;
-import br.com.libersoftt.entity.Endereco;
+import entity.Bibliotecario;
+import entity.Endereco;
 
 @Entity
 @Table(name = "aluno")

@@ -60,8 +60,6 @@
 			<artifactId>primefaces</artifactId>
 			<version>8.0</version>
 		</dependency>-->
-
-
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -99,10 +97,5 @@
 				4.0.1.Final
 			</version>
 		</dependency>
-
-
-
-
-
 	</dependencies>
 </project>

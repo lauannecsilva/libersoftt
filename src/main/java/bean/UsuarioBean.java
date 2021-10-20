@@ -1,4 +1,4 @@
-package br.com.libersoftt.bean;
+package bean;
 
 import javax.faces.bean.ManagedBean;
 
