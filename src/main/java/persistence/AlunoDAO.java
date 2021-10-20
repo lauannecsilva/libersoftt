@@ -10,6 +10,5 @@ public class AlunoDAO extends DAO {
 		open();
 		stmt = conexao.prepareStatement("insert into aluno values (null, ?,?,?,?,?,?)");
 		
-		
 	}
 }
