@@ -30,30 +30,18 @@ hr {
 }
 
 /* CONFIGURAÇÕES DOS INPUTS */
-	.inputText {
+	.inputSearch {
 		font-size: 16px !important;
-		width: 100% !important;
+		width: 400px !important;
 		padding: 12px 16px !important;
-		margin: 3px 0px !important;
 		display: inline-block !important;
 		border: 1px solid #ccc !important;
-		border-radius: 5px !important;
+		border-radius: 5px !important
 	}
 	
-	.inputText:focus, .inputSearch:focus {
+	.inputSearch:focus {
 		outline: none !important;
 	    border-color: #9ecaed !important;
-		box-shadow: 0 0 10px #9ecaed !important;
-	}
-	
-	.passwordInput {
-		width: 100%;
-		font-size: 16px !important;
-		padding: 12px 16px !important;
-		margin-top: 13px !important;
-		margin-bottom: 8px !important;
-		border: 1px solid #ccc !important;
-		border-radius: 5px !important;
 	}
 	
 	::placeholder {
@@ -71,22 +59,6 @@ hr {
 		border-radius: 5px;
 		cursor: pointer;
 		box-sizing: border-box;
-	}
-	
-	.button1 {
-		letter-spacing: 0.03em;
-		font-size: 22px;
-		width: 100%;
-		margin-top: 8px;
-		margin-bottom: 15px;
-	}
-	
-	.button1:hover {
-		background-color: #013266;
-	}
-	
-	.button1:active {
-		background-color: #012c59;
 	}
 	
 	.button2 {
@@ -117,7 +89,7 @@ hr {
 		padding: 20px 10px;
 	}
 	
-	.itensMenu {
+	.menuItem {
 		padding: 6px 8px 6px 16px;
 		margin: 10px 0;
 		text-decoration: none;
@@ -126,12 +98,12 @@ hr {
 		display: block;
 	}
 	
-	.itensMenu:hover {
+	.menuItem:hover {
 		color: #818181;
 		background-color: #f1f1f1;
 	}
 	
-	.divisaoMenu {
+	.menuSubtitulo {
 		margin-top: 20px;
 		font-weight: bold;
 	}
@@ -141,7 +113,7 @@ hr {
 		height: auto;
 	}
 	
-	.icone {
+	.iconeItem {
 		width: 20px;
 		height: auto;
 		filter: invert(51%) sepia(0%) saturate(2817%) hue-rotate(201deg) brightness(100%) contrast(79%);
@@ -156,7 +128,7 @@ hr {
 		height: 82px;
 	}
 	
-	.topnav-meio {
+	.topnavMeio {
 	    float: none;
 	    position: absolute;
 	    top: 50%;
@@ -164,17 +136,8 @@ hr {
 	    transform: translate(-50%, -50%);
 	}
 	
-	.topnav-direita {
+	.topnavDireita {
 	    float: right;
-	}
-	
-	.inputSearch {
-		font-size: 16px !important;
-		width: 400px !important;
-		padding: 12px 16px !important;
-		display: inline-block !important;
-		border: 1px solid #ccc !important;
-		border-radius: 5px !important
 	}
 
 	/* MENU PERFIL */

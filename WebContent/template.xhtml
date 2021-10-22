@@ -19,40 +19,40 @@
 		<h:form styleClass="menuLateral">
 			<h:graphicImage library="imgs" name="libersoft_logo_blue.svg" styleClass="logo"/>
 			<f:verbatim><hr/></f:verbatim>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
-			<h:graphicImage library="imgs" name="pagina_inicial.svg" styleClass="icone"/> Página Inicial</h:outputLink>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
-			<h:graphicImage library="imgs" name="livros.svg" styleClass="icone"/> Livros</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="pagina_inicial.svg" styleClass="iconeItem"/> Página Inicial</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="livros.svg" styleClass="iconeItem"/> Livros</h:outputLink>
 			
-			<h:outputLabel value="Seu Acervo" styleClass="itensMenu divisaoMenu"/>
+			<h:outputLabel value="Seu Acervo" styleClass="menuItem menuSubtitulo"/>
 			
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
-			<h:graphicImage library="imgs" name="meus_livros.svg" styleClass="icone"/> Meus Livros</h:outputLink>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
-			<h:graphicImage library="imgs" name="renovacao.svg" styleClass="icone"/> Renovação</h:outputLink>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
-			<h:graphicImage library="imgs" name="ja_lidos.svg" styleClass="icone"/> Já Lidos</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="meus_livros.svg" styleClass="iconeItem"/> Meus Livros</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="renovacao.svg" styleClass="iconeItem"/> Renovação</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="ja_lidos.svg" styleClass="iconeItem"/> Já Lidos</h:outputLink>
 		</h:form>
 		
 		<div class="topnav">
-			<div class="topnav-meio">
+			<div class="topnavMeio">
 				<h:form>
 					<h:inputText id="pesquisa" styleClass="inputSearch" a:placeholder="Procurar por livros..."/>
 					<!-- BOTÃO QUE SERÁ USADO QUANDO A BUSCA ESTIVER PRONTA -->
-					<!-- <h:commandButton value="Pesquisar" action="PesquisaDAO" styleClass="mainbtn"/>  -->
+					<!-- <h:commandButton value="Pesquisar" action="PesquisaDAO" styleClass="mainbtn button2"/>  -->
 					<!-- BOTÃO QUE SERÁ USADO ENQUANTO A BUSCA NÃO ESTIVER PRONTA -->
 					<h:button value="Pesquisar" styleClass="mainbtn button2" outcome="login.xhtml"/>
 				</h:form>
 			</div>
 			
-			<div class="topnav-direita">
+			<div class="topnavDireita">
 				<div class="menuPerfil" onclick="trocar('menuPerfil-dropdown')">
 					<h:graphicImage library="imgs" name="avatar_padrao.svg" styleClass="avatar"/>
 					<h:graphicImage library="imgs" name="flecha_baixo.svg" styleClass="selecao"/>
 					
 					<div id="menuPerfil-dropdown">
-						<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">Meu Perfil</h:outputLink>
-						<h:outputLink value="login.xhtml" styleClass="itensMenu">Sair</h:outputLink>
+						<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">Meu Perfil</h:outputLink>
+						<h:outputLink value="login.xhtml" styleClass="menuItem">Sair</h:outputLink>
 					</div>
 				</div>
 			</div>

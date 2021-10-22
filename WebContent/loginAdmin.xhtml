@@ -16,7 +16,7 @@
 	<h:body styleClass="body">
 		<h:panelGrid columns="2" styleClass="conteudo" cellspacing="90">			
 			
-			<h:form styleClass="description">
+			<h:form styleClass="descricao">
 				<h:graphicImage library="imgs" name="libersoft_logo.svg" styleClass="logo"/>
 				<f:verbatim><br/></f:verbatim>
 				<h:outputLabel value="A LiberSoft é uma plataforma de gestão de bibliotecas que conta com um serviço integrado de distribuição digital de eBooks."/>
@@ -24,18 +24,18 @@
 			
 			<h:form styleClass="login">
 				<p:inputText styleClass="inputText" value="#{Adm.login}" a:placeholder="Usuário(a)" a:autofocus="true"/>
-				<h:inputSecret styleClass="passwordInput inputText" value="#{Adm.senha}" a:placeholder="Senha"/>
+				<h:inputSecret styleClass="inputText" value="#{Adm.senha}" a:placeholder="Senha"/>
 				
 				<!-- BOTÃO QUE SERÁ USADO QUANDO A VALIDAÇÃO ESTIVER PRONTA -->
-				<!-- <h:commandButton value="Entrar" action="LoginDAO" styleClass="button1 mainbtn"/> -->
+				<!-- <h:commandButton value="Entrar" action="LoginDAO" styleClass="mainbtn button1"/> -->
 				<!-- BOTÃO QUE SERÁ USADO ENQUANTO A VALIDAÇÃO NÃO ESTIVER PRONTA -->
-				<h:button value="Entrar" styleClass="button1 mainbtn" outcome="painelAdmin.xhtml"/>
+				<h:button value="Entrar" styleClass="mainbtn button1" outcome="template.xhtml"/>
 				
 				<a href="https://google.com" target="_blank">Esqueceu a senha?</a>
 	
 				<f:verbatim><hr/></f:verbatim>
 				
-				<h:button value="Voltar" styleClass="button2 mainbtn" outcome="login.xhtml"/>
+				<h:button value="Voltar" styleClass="mainbtn button2" outcome="login.xhtml"/>
 			</h:form>
 		
 		</h:panelGrid>
