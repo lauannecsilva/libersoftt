@@ -10,7 +10,7 @@
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<title>LiberSoft</title>
-	<h:outputStylesheet library="css" name="index.css"/>
+	<h:outputStylesheet library="css" name="login.css"/>
 </h:head>	
 	
 	<h:body styleClass="body">
@@ -26,7 +26,10 @@
 				<p:inputMask styleClass="loginInput inputText" value="#{Aluno.cpf}" mask="999.999.999-99" a:placeholder="CPF" a:autofocus="true"/>
 				<h:inputSecret styleClass="inputText" value="#{Aluno.senha}" a:placeholder="Senha"/>
 				
-				<h:commandButton value="Entrar" action="LoginDAO" styleClass="loginButton mainbtn"/>
+				<!-- BOTÃO QUE SERÁ USADO QUANDO A VALIDAÇÃO ESTIVER PRONTA -->
+				<!-- <h:commandButton value="Entrar" action="LoginDAO" styleClass="loginButton mainbtn"/>  -->
+				<!-- BOTÃO QUE SERÁ USADO ENQUANTO A VALIDAÇÃO NÃO ESTIVER PRONTA -->
+				<h:button value="Entrar" styleClass="loginButton mainbtn" outcome="index.xhtml"/>
 				
 				<a href="https://google.com" target="_blank">Esqueceu a senha?</a>
 	
