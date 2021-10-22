@@ -27,11 +27,6 @@ hr {
 	background-color: #013974;
 }
 
-.termosCondicoes {
-	margin: 10px 0 5px 0;
-	text-align: left;
-}
-
 /* CONTENT SETTINGS */
 .conteudo {
 	display: flex;
@@ -50,7 +45,7 @@ hr {
 	text-align: center;
 	position: relative;  
 	width: 400px;
-	height:610px;
+	height: 410px;
     border-radius: 5px;
 	background-color: #fff;
 	padding: 15px;

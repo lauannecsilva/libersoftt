@@ -19,9 +19,9 @@
 				<h:form styleClass="cadastro">
 				
 					<h:panelGroup layout="block" styleClass="cadastroTopo">
-						<h:outputLabel value="Cadastre-se" styleClass="title"/>
+						<h:outputLabel value="Cadastro" styleClass="title"/>
 						<f:verbatim><br/></f:verbatim>
-						<h:outputLabel value="A LiberSoft é a plataforma certa para a sua biblioteca digital." styleClass="subtitle"/>
+						<h:outputLabel value="Insira as informações do novo estudante." styleClass="subtitle"/>
 						<f:verbatim><hr/></f:verbatim>
 					</h:panelGroup>
 					
@@ -29,19 +29,8 @@
 					<p:inputText styleClass="inputText" value="#{Aluno.email}" a:placeholder="Email"/>
 					<p:inputMask styleClass="inputText" value="#{Aluno.telefone}" mask="(99) 9 9999-9999" a:placeholder="Celular"/>
 					<p:inputMask styleClass="inputText" value="#{Aluno.cpf}" mask="999.999.999-99" a:placeholder="CPF"/>
-					<h:inputSecret styleClass="inputText" value="#{Aluno.senha}" a:placeholder="Senha"/>
-					<h:inputSecret styleClass="inputText" value="#{Aluno.confirmaSenha}" a:placeholder="Confirmar Senha"/>
 					
-					<h:panelGroup layout="block" styleClass="termosCondicoes">
-						<p:selectBooleanCheckbox styleClass="checkbox" value="#{Aluno.confirmaTermos}" required="true"/>
-						<h:outputLabel value=" Eu concordo com os"/>
-						<a href="https://google.com" target="_blank">Termos e Condições</a>
-						<h:outputLabel value="."/>
-					</h:panelGroup>
-					
-					<h:commandButton value="Cadastre-se" action="CadastroDAO" styleClass="button1 mainbtn"/>
-					
-					<a href="index.xhtml">Já tem uma conta? Entre agora!</a>
+					<h:commandButton value="Cadastre" action="CadastroDAO" styleClass="button1 mainbtn"/>
 					
 				</h:form>
 				
