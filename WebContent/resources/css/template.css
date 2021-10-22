@@ -73,7 +73,7 @@ hr {
 		box-sizing: border-box;
 	}
 	
-	.loginButton {
+	.button1 {
 		letter-spacing: 0.03em;
 		font-size: 22px;
 		width: 100%;
@@ -81,25 +81,25 @@ hr {
 		margin-bottom: 15px;
 	}
 	
-	.loginButton:hover {
+	.button1:hover {
 		background-color: #013266;
 	}
 	
-	.loginButton:active {
+	.button1:active {
 		background-color: #012c59;
 	}
 	
-	.backButton {
+	.button2 {
 		letter-spacing: 0.03em;
-		font-size: 18px;
+		font-size: 12px;
 		background-color: #b3995d;
 	}
 	
-	.backButton:hover {
+	.button2:hover {
 		background-color: #a68e56;
 	}
 	
-	.backButton:active {
+	.button2:active {
 		background-color: #998350;
 	}
 /* CONFIGURAÇÕES DO BOTÕES */
