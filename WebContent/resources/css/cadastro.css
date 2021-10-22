@@ -99,7 +99,7 @@ hr {
 	box-sizing: border-box;
 }
 
-.signupButton {
+.button1 {
 	letter-spacing: 0.03em;
 	font-size: 22px;
 	width: 100%;
@@ -107,11 +107,11 @@ hr {
 	margin-bottom: 15px;
 }
 
-.signupButton:hover {
+.button1:hover {
 	background-color: #013266;
 }
 
-.signupButton:active {
+.button1:active {
 	background-color: #012c59;
 }
 /* BUTTONS SETTINGS */
