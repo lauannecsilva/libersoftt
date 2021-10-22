@@ -149,14 +149,14 @@ hr {
 	display: block;
 }
 
+.itensMenu:hover {
+	color: #818181;
+	background-color: #f1f1f1;
+}
+
 .divisaoMenu {
 	margin-top: 20px;
 	font-weight: bold;
-}
-
-.botao:hover {
-	color: #818181;
-	background-color: #f1f1f1;
 }
 
 .logo {
@@ -169,5 +169,51 @@ hr {
 	height: auto;
 	filter: invert(51%) sepia(0%) saturate(2817%) hue-rotate(201deg) brightness(100%) contrast(79%);
 }
-
 /* MENU LATERAL */
+
+/* MENU TOPO */
+.topnav {
+    position: relative;
+	padding: 20px 10px;
+	color: #fff;
+}
+
+.topnav-meio {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topnav-direita {
+    float: right;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.selecao {
+	width: 20px;
+	height: auto;
+}
+
+.menuPerfil {
+	position: relative;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.menuPerfil #menuPerfil-dropdown {
+	position: absolute;
+	width: 200px;
+	right: 0;
+	display: none;
+	background-color: #fff;
+	border-radius: 10px;
+}
+

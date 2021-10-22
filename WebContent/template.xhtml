@@ -11,28 +11,44 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<title>LiberSoft</title>
 	<h:outputStylesheet library="css" name="template.css"/>
+	<h:outputScript library="js" name="template.js" />
 </h:head>	
 	
 	<h:body styleClass="body">
+	
 		<h:form styleClass="menuLateral">
 			<h:graphicImage library="imgs" name="libersoft_logo_blue.svg" styleClass="logo"/>
 			<f:verbatim><hr/></f:verbatim>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu botao">
+			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
 			<h:graphicImage library="imgs" name="pagina_inicial.svg" styleClass="icone"/> Página Inicial</h:outputLink>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu botao">
+			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
 			<h:graphicImage library="imgs" name="livros.svg" styleClass="icone"/> Livros</h:outputLink>
 			
 			<h:outputLabel value="Seu Acervo" styleClass="itensMenu divisaoMenu"/>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu botao">
+			
+			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
 			<h:graphicImage library="imgs" name="meus_livros.svg" styleClass="icone"/> Meus Livros</h:outputLink>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu botao">
+			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
 			<h:graphicImage library="imgs" name="renovacao.svg" styleClass="icone"/> Renovação</h:outputLink>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu botao">
+			<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">
 			<h:graphicImage library="imgs" name="ja_lidos.svg" styleClass="icone"/> Já Lidos</h:outputLink>
 		</h:form>
 		
-		<h:panelGrid columns="2" styleClass="conteudo">
+		<div class="topnav">
+			<div class="topnav-direita">
+				<div class="menuPerfil" onclick="trocar('menuPerfil-dropdown')">
+					<h:graphicImage library="imgs" name="avatar_padrao.svg" styleClass="avatar"/>
+					<h:graphicImage library="imgs" name="flecha_baixo.svg" styleClass="selecao"/>
+					
+					<div id="menuPerfil-dropdown">
+						<h:outputLink value="https://google.com" target="_blank" styleClass="itensMenu">Meu Perfil</h:outputLink>
+						<h:outputLink value="login.xhtml" styleClass="itensMenu">Sair</h:outputLink>
+					</div>
+				</div>
+			</div>
+		</div>
 		
-		</h:panelGrid>
+		
+		
 	</h:body>
 </html>
