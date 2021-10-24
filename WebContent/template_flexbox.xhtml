@@ -22,7 +22,7 @@
 			
 			<f:verbatim><hr style="margin: 10% 0"/></f:verbatim>
 			
-			<h:outputLink value="#" styleClass="menuItem">
+			<h:outputLink value="home.xhtml" styleClass="menuItem">
 			<h:graphicImage library="imgs" name="pagina_inicial.svg" styleClass="iconeItem"/> Página Inicial</h:outputLink>
 			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
 			<h:graphicImage library="imgs" name="livros.svg" styleClass="iconeItem"/> Livros</h:outputLink>
@@ -41,17 +41,16 @@
 			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
 			<h:graphicImage library="imgs" name="avatar_padrao.svg" styleClass="iconeItem"/> Meu Perfil</h:outputLink>
 			<h:outputLink value="login.xhtml" styleClass="menuItem">
-			<h:graphicImage library="imgs" name="sair.svg" styleClass="iconeItem"/> Sair</h:outputLink>
-			
-			
+			<h:graphicImage library="imgs" name="sair.svg" styleClass="iconeItem"/> Sair</h:outputLink>	
 		</div>
+
 		<div class="content">
 			<div class="barraDePesquisa">
 				<h:form class="formularioPesquisa">
 					<h:inputText id="pesquisa" styleClass="inputSearch" a:placeholder="Procurar por livros..."/>
 					<h:button value="Pesquisar" styleClass="mainbtn button2" outcome="login.xhtml"/>
 					<!-- BOTÃO QUE SERÁ USADO QUANDO A BUSCA ESTIVER PRONTA -->
-					<!-- <h:commandButton value="Pesquisar" action="PesquisaDAO" styleClass="mainbtn button2"/>  -->
+					<!-- <h:commandButton value="Pesquisar" action="PesquisaDAO" styleClass="mainbtn button2"/> -->
 					<!-- BOTÃO QUE SERÁ USADO ENQUANTO A BUSCA NÃO ESTIVER PRONTA -->
 				</h:form>
 			</div>
@@ -66,6 +65,7 @@
 						</h:outputLink>
 						<h:outputText id="autorLivro1" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
 					</div>
+					
 					<div class="estruturaLivro">
 						<h:outputLink value="https://google.com" target="_blank">
 							<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
@@ -73,6 +73,7 @@
 						</h:outputLink>
 						<h:outputText id="autorLivro2" styleClass="autorLivro" value="Robert C. Martin"/>
 					</div>
+
 					<div class="estruturaLivro">
 						<h:outputLink value="https://google.com" target="_blank">
 							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
@@ -80,6 +81,7 @@
 						</h:outputLink>
 						<h:outputText id="autorLivro3" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
 					</div>
+
 					<div class="estruturaLivro">
 						<h:outputLink value="https://google.com" target="_blank">
 							<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
@@ -87,6 +89,7 @@
 						</h:outputLink>
 						<h:outputText id="autorLivro4" styleClass="autorLivro" value="Robert C. Martin"/>
 					</div>
+					
 					<div class="estruturaLivro">
 						<h:outputLink value="https://google.com" target="_blank">
 							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
@@ -101,12 +104,13 @@
 				<p>Meus Livros</p>
 				<div class="livros">
 					<div class="estruturaLivro">
-						<h:outputLink value="https://google.com" target="_blank">
+						<h:outputLink value="https://google.com" target="_blank">						
 							<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
 							<h:outputText id="tituloLivro6" styleClass="tituloLivro" value="Código Limpo"/> <br/>
 						</h:outputLink>
 						<h:outputText id="autorLivro6" styleClass="autorLivro" value="Robert C. Martin"/>
 					</div>
+					
 					<div class="estruturaLivro">
 						<h:outputLink value="https://google.com" target="_blank">
 							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
@@ -118,7 +122,6 @@
 			</div>
 		</div>
 	</div>
-
 
 </h:body>
 </html>

@@ -114,6 +114,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 		border: 1px solid #ccc !important;
 		border-radius: 0.3vw 0 0 0.3vw !important;
 		cursor: text;
+		color: #818181;
 	}
 	
 	.inputSearch:focus {
@@ -166,7 +167,8 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	.estruturaLivro {
 		width: 12vw;
 		height: 12vw;
-		background: white;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 0.3vw;
 	}
 	
 	.livro {
@@ -177,6 +179,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	
 	.tituloLivro {
 		font-size: 1vw;
+		text-align: center;
 	}
 	
 	.autorLivro {
