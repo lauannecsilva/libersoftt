@@ -174,7 +174,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 
 /* CONFIGURAÇÕES DAS ESTRUTURAS DOS LIVROS */
 
-	.meuPerfil {
+	.alterarSenha {
 		margin: 0 5% 6% 5%;
 	}
 	
@@ -187,7 +187,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	}
 	
 	.informacoesPerfil > * {
-		flex: 1 1 30%;
+		flex: 1 1 100%;
 	}
 	
 	.informacaoPerfil {

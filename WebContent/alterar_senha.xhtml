@@ -11,7 +11,7 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<title>LiberSoft</title>
-	<h:outputStylesheet library="css" name="meu_perfil.css"/>
+	<h:outputStylesheet library="css" name="alterar_senha.css"/>
 	
 </h:head>
 <h:body styleClass="body">
@@ -53,16 +53,13 @@
 				</h:form>
 			</div>
 			
-			<div class="meuPerfil">
-				<p>Meu Perfil</p>
+			<div class="alterarSenha">
+				<p>Alterar Senha</p>
 				<div class="informacoesPerfil">
-					<!-- <p:outputLabel for="nome" value="Nome" /> -->
-					<p:inputText id="nome" value="Josefina Cordial" disabled="true" styleClass="informacaoPerfil" /> <!-- DENTRO DESSE "VALUE" SERÁ POSTO O #{bean.propertyName} -->
-					<!-- <p:outputLabel for="email" value="Email" /> -->
-					<p:inputText id="email" value="josefina@google.com" disabled="true" styleClass="informacaoPerfil" /> <!-- DENTRO DESSE "VALUE" SERÁ POSTO O #{bean.propertyName} -->
-					<!-- <p:outputLabel for="cpf" value="CPF" /> -->
-					<p:inputText id="cpf" value="777.123.321-55" disabled="true" styleClass="informacaoPerfil" /> <!-- DENTRO DESSE "VALUE" SERÁ POSTO O #{bean.propertyName} -->
-					<p:button outcome="alterar_senha.xhtml" value="Alterar Senha" styleClass="informacaoPerfil"/>
+					<p:inputText id="senhaAntiga" value="#{Aluno.senha}" styleClass="informacaoPerfil" a:placeholder="Senha Antiga"/> <!-- DENTRO DESSE "VALUE" SERÁ POSTO O #{bean.propertyName} -->
+					<p:inputText id="novaSenha" value="#{Aluno.novaSenha}" styleClass="informacaoPerfil" a:placeholder="Nova Senha"/> <!-- DENTRO DESSE "VALUE" SERÁ POSTO O #{bean.propertyName} -->
+					<p:inputText id="novaSenhaConfirma" value="#{Aluno.novaSenhaConfirma}" styleClass="informacaoPerfil" a:placeholder="Confirmar Nova Senha"/> <!-- DENTRO DESSE "VALUE" SERÁ POSTO O #{bean.propertyName} -->
+					<p:button outcome="meu_perfil.xhtml" value="Alterar Senha" styleClass="informacaoPerfil"/>
 				</div>
 			</div>
 		</div>
