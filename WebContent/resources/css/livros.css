@@ -14,6 +14,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 		padding: 0;
 		margin: 0;
 		color: white;
+		font-size: 0.9vw;
 	}
 	
 	html {
@@ -228,10 +229,6 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	.subtituloLivro {
 		font-size: 0.7vw;
 		color: #a7a7a7;
-	}
-	
-	.descricaoLivro {
-		font-size: 0.9vw;
 	}
 	
 	.quantidadeLivro {
