@@ -11,7 +11,7 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<title>LiberSoft</title>
-	<h:outputStylesheet library="css" name="home.css"/>
+	<h:outputStylesheet library="css" name="meus_livros.css"/>
 	
 </h:head>
 <h:body styleClass="body">
@@ -55,22 +55,31 @@
 				</h:form>
 			</div>
 			
-			<div class="recomendacoes">
-				<p>Recomendações</p>
+			
+			<div class="meusLivros">
+				<p>Meus Livros</p>
 				<div class="livros">
 					<div class="estruturaLivro">
-						<h:outputLink value="https://google.com" target="_blank">
-							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
-							<h:outputText id="tituloLivro1" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> <br/>
-						</h:outputLink>
-						<h:outputText id="autorLivro1" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
+						<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
+						<div class="informacoes">
+							<div class="topo">
+								<h:outputText id="tituloLivro1" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> 
+								<h:outputText id="volumeLivro1" styleClass="volumeLivro" value=""/> <br/>
+								<h:outputText id="autorLivro1" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
+								<h:outputText styleClass="pontoDivisor" value=" - "/>
+								<h:outputText id="anoLivro1" styleClass="anoLivro" value="2007"/> <br/>
+								<h:outputText id="descricaoLivro1" styleClass="descricaoLivro" value="Escrito por um do maiores nomes em computação no mundo, este livro é a chave para entender desde a história e os fundamentos dos sistemas operacionais até os mais recentes avanços tecnológicos na área. Segurança de computadores, sistemas operacionais multimídia e projeto de sistemas operacionais são alguns dos temas apresentados. O livro ainda descreve em detalhes os principais sistemas operacionais em uso, entre os quais o Linux, o Unix e o Windows 2000."/> <br/>
+							</div>
+							
+							<div class="base">
+								<h:outputText id="quantidadeLivro1" styleClass="quantidadeLivro" value="Quantidade disponível: 10 exemplares."/>
+							</div>
+						</div>
 					</div>
 					
 					<div class="estruturaLivro">
-						<h:outputLink value="https://google.com" target="_blank">
-							<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
-							<h:outputText id="tituloLivro2" styleClass="tituloLivro" value="Código Limpo"/> <br/>
-						</h:outputLink>
+						<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
+						<h:outputText id="tituloLivro2" styleClass="tituloLivro" value="Código Limpo"/> <br/>
 						<h:outputText id="autorLivro2" styleClass="autorLivro" value="Robert C. Martin"/>
 					</div>
 
@@ -98,28 +107,7 @@
 						<h:outputText id="autorLivro5" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
 					</div>
 				</div>
-			</div>
-			
-			<div class="meusLivros">
-				<p>Meus Livros</p>
-				<div class="livros">
-					<div class="estruturaLivro">
-						<h:outputLink value="https://google.com" target="_blank">						
-							<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
-							<h:outputText id="tituloLivro6" styleClass="tituloLivro" value="Código Limpo"/> <br/>
-						</h:outputLink>
-						<h:outputText id="autorLivro6" styleClass="autorLivro" value="Robert C. Martin"/>
-					</div>
-					
-					<div class="estruturaLivro">
-						<h:outputLink value="https://google.com" target="_blank">
-							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
-							<h:outputText id="tituloLivro7" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> <br/>
-						</h:outputLink>
-						<h:outputText id="autorLivro7" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
-					</div>
-				</div>
-			</div>
+			</div>	
 		</div>
 	</div>
 

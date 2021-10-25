@@ -184,7 +184,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	
 	.autorLivro {
 		font-size: 0.7vw;
-		color: #818181;
+		color: #a7a7a7;
 	}
 
 /* CONFIGURAÇÕES DAS ESTRUTURAS DOS LIVROS */

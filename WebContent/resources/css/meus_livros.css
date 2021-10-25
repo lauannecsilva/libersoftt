@@ -24,6 +24,8 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	}
 	
 	p {
+		margin: 0;
+		padding: 0;
 		font-size: 1.5vw;
 	}
 
@@ -160,31 +162,52 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	
 	.livros {
 		display: flex;
-		gap: 4em;
+		flex-wrap: wrap;
+		gap: 2em;
 		padding: 1.5% 0;
 	}
 	
+	.livros > * {
+		flex: 1 1 100%;
+	}
+	
 	.estruturaLivro {
-		width: 12vw;
-		height: 12vw;
+		display: flex;
+		width: 100%;
 		background-color: rgba(255, 255, 255, 0.2);
 		border-radius: 0.3vw;
+		overflow: hidden;
+	}
+	
+	.estruturaLivro > * .livro {
+		flex: 1 1 30%;
+	}
+	
+	.estruturaLivro > * .informacoes {
+		flex: 1 0 70%;	
 	}
 	
 	.livro {
-		height: 100%;
-		width: 100%;
-		object-fit: contain;
+		height: 12vw;
+		width: auto;
+		margin-right: 0.5vw;
 	}
 	
 	.tituloLivro {
 		font-size: 1vw;
-		text-align: center;
 	}
 	
-	.autorLivro {
+	.autorLivro, .anoLivro, .pontoDivisor {
 		font-size: 0.7vw;
 		color: #a7a7a7;
+	}
+	
+	.descricaoLivro {
+		font-size: 0.9vw;
+	}
+	
+	.quantidadeLivro {
+		margin-top: auto;
 	}
 
 /* CONFIGURAÇÕES DAS ESTRUTURAS DOS LIVROS */
