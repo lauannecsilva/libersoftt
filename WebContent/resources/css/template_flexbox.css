@@ -26,6 +26,26 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	p {
 		font-size: 1.5vw;
 	}
+	
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+	
+	::-webkit-scrollbar-track {
+	  background-color: #fff;
+	}
+	
+	::-webkit-scrollbar-thumb {
+	  background: #b3995d; 
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+	  background: #a68e56; 
+	}
+	
+	::-webkit-scrollbar-thumb:active {
+	  background: #998350; 
+	}
 
 /* CONFIGURAÇÕES GERAIS */
 
