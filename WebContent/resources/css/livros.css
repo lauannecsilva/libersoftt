@@ -28,6 +28,26 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 		padding: 0;
 		font-size: 1.5vw;
 	}
+	
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+	
+	::-webkit-scrollbar-track {
+	  background-color: #fff;
+	}
+	
+	::-webkit-scrollbar-thumb {
+	  background: #b3995d; 
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+	  background: #a68e56; 
+	}
+	
+	::-webkit-scrollbar-thumb:active {
+	  background: #998350; 
+	}
 
 /* CONFIGURAÇÕES GERAIS */
 
@@ -177,6 +197,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 		background-color: rgba(255, 255, 255, 0.2);
 		border-radius: 0.3vw;
 		overflow: hidden;
+		align-items: flex-start;
 	}
 	
 	.estruturaLivro > * .livro {
@@ -184,20 +205,27 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	}
 	
 	.estruturaLivro > * .informacoes {
-		flex: 1 0 70%;	
+		flex: 1 1 70%;	
+	}
+	
+	.informacoes {
+		display: flex;
+		flex-direction: column;
+		padding: 0.4vw 0.5vw;
+		gap: 0.3em;
+		height: 100%;
 	}
 	
 	.livro {
 		height: 12vw;
 		width: auto;
-		margin-right: 0.5vw;
 	}
 	
 	.tituloLivro {
 		font-size: 1vw;
 	}
 	
-	.autorLivro, .categoriaLivro, .pontoDivisor {
+	.subtituloLivro {
 		font-size: 0.7vw;
 		color: #a7a7a7;
 	}
@@ -207,6 +235,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	}
 	
 	.quantidadeLivro {
+		margin-top: auto;
 	}
 
 /* CONFIGURAÇÕES DAS ESTRUTURAS DOS LIVROS */
