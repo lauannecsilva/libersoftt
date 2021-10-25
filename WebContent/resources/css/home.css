@@ -180,6 +180,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	
 	.livros {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 4em;
 		padding: 1.5% 0;
 	}
@@ -199,7 +200,6 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	
 	.tituloLivro {
 		font-size: 1vw;
-		text-align: center;
 	}
 	
 	.autorLivro {
