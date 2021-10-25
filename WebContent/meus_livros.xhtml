@@ -33,12 +33,10 @@
 			<h:graphicImage library="imgs" name="meus_livros.svg" styleClass="iconeItem"/> Meus Livros</h:outputLink>
 			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
 			<h:graphicImage library="imgs" name="renovacao.svg" styleClass="iconeItem"/> Renovação</h:outputLink>
-			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
-			<h:graphicImage library="imgs" name="ja_lidos.svg" styleClass="iconeItem"/> Já Lidos</h:outputLink>
 			
 			<h:outputLabel value="Você" styleClass="menuItem menuSubtitulo"/>
 			
-			<h:outputLink value="meu_perfil.xhtml" target="_blank" styleClass="menuItem">
+			<h:outputLink value="meu_perfil.xhtml" styleClass="menuItem">
 			<h:graphicImage library="imgs" name="avatar_padrao.svg" styleClass="iconeItem"/> Meu Perfil</h:outputLink>
 			<h:outputLink value="login.xhtml" styleClass="menuItem">
 			<h:graphicImage library="imgs" name="sair.svg" styleClass="iconeItem"/> Sair</h:outputLink>	
@@ -48,7 +46,7 @@
 			<div class="barraDePesquisa">
 				<h:form class="formularioPesquisa">
 					<h:inputText id="pesquisa" styleClass="inputSearch" a:placeholder="Procurar por livros..."/>
-					<h:button value="Pesquisar" styleClass="mainbtn button2" outcome="login.xhtml"/>
+					<h:button value="Pesquisar" styleClass="mainbtn button2" outcome="home.xhtml"/>
 					<!-- BOTÃO QUE SERÁ USADO QUANDO A BUSCA ESTIVER PRONTA -->
 					<!-- <h:commandButton value="Pesquisar" action="PesquisaDAO" styleClass="mainbtn button2"/> -->
 					<!-- BOTÃO QUE SERÁ USADO ENQUANTO A BUSCA NÃO ESTIVER PRONTA -->

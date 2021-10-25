@@ -177,7 +177,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 
 /* CONFIGURAÇÕES DAS ESTRUTURAS DOS LIVROS */
 
-	.recomendacoes, .estruturaPrincipal {
+	.estruturaPrincipal {
 		margin: 0 5% 6% 5%;
 	}
 	
