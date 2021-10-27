@@ -1,4 +1,4 @@
-package entity;
+package br.com.libersoft.Entity;
 
 public class Endereco {
 
