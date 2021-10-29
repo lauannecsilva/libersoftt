@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>LiberSoft</title>
+	<h:outputStylesheet library="css" name="login.css"/>
+</h:head>	
+	
+	<h:body styleClass="body">
+		<h:panelGrid columns="2" styleClass="conteudo" cellspacing="90">			
+			
+			<h:form styleClass="description">
+				<h:graphicImage library="imgs" name="libersoft_logo.png" styleClass="logo"/>
+				<f:verbatim><br/></f:verbatim>
+				<h:outputLabel value="A LiberSoft é uma plataforma de gestão de bibliotecas que conta com um serviço integrado de distribuição digital de eBooks."/>
+			</h:form>
+			
+			<h:form styleClass="login">
+				<p:inputMask styleClass="loginInput inputText" value="#{Aluno.cpf}" mask="999.999.999-99" a:placeholder="CPF" a:autofocus="true"/>
+				<h:inputSecret styleClass="inputText" value="#{Aluno.senha}" a:placeholder="Senha"/>
+				
+				<h:commandButton value="Entrar" action="LoginDAO" styleClass="loginButton mainbtn"/>
+				
+				<a href="https://google.com" target="_blank">Esqueceu a senha?</a>
+	
+				<f:verbatim><hr/></f:verbatim>
+				
+				<h:button value="Criar nova conta" styleClass="newAccountButton mainbtn" outcome="cadastro.xhtml"/>
+			</h:form>
+		
+		</h:panelGrid>
+	</h:body>
+</html>

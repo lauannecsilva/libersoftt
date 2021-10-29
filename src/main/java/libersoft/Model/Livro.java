@@ -1,6 +1,6 @@
-package br.com.libersoftt.entity;
+package libersoft.Model;
 
-import br.com.libersoftt.entity.Bibliotecario;
+import libersoft.Model.Bibliotecario;
 
 public class Livro {
 
