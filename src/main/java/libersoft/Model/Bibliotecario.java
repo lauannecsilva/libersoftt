@@ -1,4 +1,4 @@
-package br.com.libersoft.Entity;
+package libersoft.Model;
 
 public class Bibliotecario {
 

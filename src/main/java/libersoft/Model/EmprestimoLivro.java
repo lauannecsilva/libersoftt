@@ -1,10 +1,10 @@
-package br.com.libersoft.Entity;
+package libersoft.Model;
 
 import java.sql.Date;
 
-import br.com.libersoft.Entity.Aluno;
-import br.com.libersoft.Entity.Bibliotecario;
-import br.com.libersoft.Entity.Livro;
+import libersoft.Model.Aluno;
+import libersoft.Model.Bibliotecario;
+import libersoft.Model.Livro;
 
 public class EmprestimoLivro {
 
