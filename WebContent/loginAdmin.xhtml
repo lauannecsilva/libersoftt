@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>LiberSoft</title>
+	<h:outputStylesheet library="css" name="loginAdmin.css"/>
+</h:head>	
+	
+	<h:body styleClass="body">
+		<h:panelGrid columns="2" styleClass="conteudo" cellspacing="90">			
+			
+			<h:form styleClass="descricao">
+				<h:graphicImage library="imgs" name="libersoft_logo.svg" styleClass="logo"/>
+				<f:verbatim><br/></f:verbatim>
+				<h:outputLabel value="A LiberSoft é uma plataforma de gestão de bibliotecas que conta com um serviço integrado de distribuição digital de eBooks."/>
+			</h:form>
+			
+			<h:form styleClass="login">
+				<p:inputText styleClass="inputText" value="#{Adm.login}" a:placeholder="Usuário(a)" a:autofocus="true"/>
+				<h:inputSecret styleClass="inputText" value="#{Adm.senha}" a:placeholder="Senha"/>
+				
+				<!-- BOTÃO QUE SERÁ USADO QUANDO A VALIDAÇÃO ESTIVER PRONTA -->
+				<!-- <h:commandButton value="Entrar" action="LoginDAO" styleClass="mainbtn button1"/> -->
+				<!-- BOTÃO QUE SERÁ USADO ENQUANTO A VALIDAÇÃO NÃO ESTIVER PRONTA -->
+				<h:button value="Entrar" styleClass="mainbtn button1" outcome="home.xhtml"/>
+				
+				<a href="https://google.com" target="_blank">Esqueceu a senha?</a>
+	
+				<f:verbatim><hr/></f:verbatim>
+				
+				<h:button value="Voltar" styleClass="mainbtn button2" outcome="login.xhtml"/>
+			</h:form>
+		
+		</h:panelGrid>
+	</h:body>
+</html>

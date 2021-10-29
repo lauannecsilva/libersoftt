@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>LiberSoft</title>
+	<h:outputStylesheet library="css" name="livros.css"/>
+	
+</h:head>
+<h:body styleClass="body">
+
+	<div class="wrapper">
+		<div class="left-navbar">
+			<h:graphicImage library="imgs" name="libersoft_logo_blue.svg" styleClass="logo"/>
+			
+			<f:verbatim><hr style="margin: 10% 0"/></f:verbatim>
+			
+			<h:outputLink value="home.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="pagina_inicial.svg" styleClass="iconeItem"/> Página Inicial</h:outputLink>
+			<h:outputLink value="livros.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="livros.svg" styleClass="iconeItem"/> Livros</h:outputLink>
+			
+			<h:outputLabel value="Seu Acervo" styleClass="menuItem menuSubtitulo"/>
+			
+			<h:outputLink value="meus_livros.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="meus_livros.svg" styleClass="iconeItem"/> Meus Livros</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="renovacao.svg" styleClass="iconeItem"/> Renovação</h:outputLink>
+			
+			<h:outputLabel value="Você" styleClass="menuItem menuSubtitulo"/>
+			
+			<h:outputLink value="meu_perfil.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="avatar_padrao.svg" styleClass="iconeItem"/> Meu Perfil</h:outputLink>
+			<h:outputLink value="login.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="sair.svg" styleClass="iconeItem"/> Sair</h:outputLink>	
+		</div>
+
+		<div class="content">
+			<div class="barraDePesquisa">
+				<h:form class="formularioPesquisa">
+					<h:inputText id="pesquisa" styleClass="inputSearch" a:placeholder="Procurar por livros..."/>
+					<h:button value="Pesquisar" styleClass="mainbtn button2" outcome="home.xhtml"/>
+					<!-- BOTÃO QUE SERÁ USADO QUANDO A BUSCA ESTIVER PRONTA -->
+					<!-- <h:commandButton value="Pesquisar" action="PesquisaDAO" styleClass="mainbtn button2"/> -->
+					<!-- BOTÃO QUE SERÁ USADO ENQUANTO A BUSCA NÃO ESTIVER PRONTA -->
+				</h:form>
+			</div>
+			
+			
+			<div class="estruturaPrincipal">
+				<p>Livros</p>
+				<div class="livros">
+					<div class="estruturaLivro">
+						<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
+						<div class="informacoes">
+							<h:outputText id="tituloLivro1" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/>
+							<h:outputText id="volumeLivro1" styleClass="volumeLivro" value=""/>
+							<h:outputText id="subtituloLivro1" styleClass="subtituloLivro" value="Andrew S. Tenembaum - Programação"/>
+							<h:outputText id="descricaoLivro1" styleClass="descricaoLivro" value="Escrito por um do maiores nomes em computação no mundo, este livro é a chave para entender desde a história e os fundamentos dos sistemas operacionais até os mais recentes avanços tecnológicos na área. Segurança de computadores, sistemas operacionais multimídia e projeto de sistemas operacionais são alguns dos temas apresentados. O livro ainda descreve em detalhes os principais sistemas operacionais em uso, entre os quais o Linux, o Unix e o Windows 2000."/>
+							<h:outputText id="quantidadeLivro1" styleClass="quantidadeLivro" value="Quantidade disponível: 10"/>
+						</div>
+					</div>
+					
+					<div class="estruturaLivro">
+						<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
+						<div class="informacoes">
+							<h:outputText id="tituloLivro2" styleClass="tituloLivro" value="Código Limpo"/> 
+							<h:outputText id="volumeLivro2" styleClass="volumeLivro" value=""/>
+							<h:outputText id="subtituloLivro2" styleClass="subtituloLivro" value="Robert C. Martin - Programação"/>
+							<h:outputText id="descricaoLivro2" styleClass="descricaoLivro" value="Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de desenvolvimento. Perdem-se a cada ano horas incontáveis e recursos importantes devido a um código mal escrito. Mas não precisa ser assim.O renomado especialista em software, Robert C. Martin, apresenta um paradigma revolucionário com Código limpo: Habilidades Práticas do Agile Software."/>
+							<h:outputText id="quantidadeLivro2" styleClass="quantidadeLivro" value="Quantidade disponível: 15"/>
+						</div>
+					</div>
+
+					<div class="estruturaLivro">
+						<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
+						<div class="informacoes">
+							<h:outputText id="tituloLivro3" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> 
+							<h:outputText id="volumeLivro3" styleClass="volumeLivro" value=""/>
+							<h:outputText id="subtituloLivro3" styleClass="subtituloLivro" value="Andrew S. Tenembaum - Programação"/>
+							<h:outputText id="descricaoLivro3" styleClass="descricaoLivro" value="Escrito por um do maiores nomes em computação no mundo, este livro é a chave para entender desde a história e os fundamentos dos sistemas operacionais até os mais recentes avanços tecnológicos na área. Segurança de computadores, sistemas operacionais multimídia e projeto de sistemas operacionais são alguns dos temas apresentados. O livro ainda descreve em detalhes os principais sistemas operacionais em uso, entre os quais o Linux, o Unix e o Windows 2000."/>
+							<h:outputText id="quantidadeLivro3" styleClass="quantidadeLivro" value="Quantidade disponível: 10"/>
+						</div>
+					</div>
+
+					<div class="estruturaLivro">
+						<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
+						<div class="informacoes">
+							<h:outputText id="tituloLivro4" styleClass="tituloLivro" value="Código Limpo"/> 
+							<h:outputText id="volumeLivro4" styleClass="volumeLivro" value=""/>
+							<h:outputText id="subtituloLivro4" styleClass="subtituloLivro" value="Robert C. Martin - Programação"/>
+							<h:outputText id="descricaoLivro4" styleClass="descricaoLivro" value="Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de desenvolvimento. Perdem-se a cada ano horas incontáveis e recursos importantes devido a um código mal escrito. Mas não precisa ser assim.O renomado especialista em software, Robert C. Martin, apresenta um paradigma revolucionário com Código limpo: Habilidades Práticas do Agile Software."/>
+							<h:outputText id="quantidadeLivro4" styleClass="quantidadeLivro" value="Quantidade disponível: 15"/>
+						</div>
+					</div>
+
+					<div class="estruturaLivro">
+						<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
+						<div class="informacoes">
+							<h:outputText id="tituloLivro5" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> 
+							<h:outputText id="volumeLivro5" styleClass="volumeLivro" value=""/>
+							<h:outputText id="subtituloLivro5" styleClass="subtituloLivro" value="Andrew S. Tenembaum - Programação"/>
+							<h:outputText id="descricaoLivro5" styleClass="descricaoLivro" value="Escrito por um do maiores nomes em computação no mundo, este livro é a chave para entender desde a história e os fundamentos dos sistemas operacionais até os mais recentes avanços tecnológicos na área. Segurança de computadores, sistemas operacionais multimídia e projeto de sistemas operacionais são alguns dos temas apresentados. O livro ainda descreve em detalhes os principais sistemas operacionais em uso, entre os quais o Linux, o Unix e o Windows 2000."/>
+							<h:outputText id="quantidadeLivro5" styleClass="quantidadeLivro" value="Quantidade disponível: 10"/>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+</h:body>
+</html>

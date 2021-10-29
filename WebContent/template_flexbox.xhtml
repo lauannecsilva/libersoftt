@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>LiberSoft</title>
+	<h:outputStylesheet library="css" name="template_flexbox.css"/>
+	
+</h:head>
+<h:body styleClass="body">
+
+	<div class="wrapper">
+		<div class="left-navbar">
+			<h:graphicImage library="imgs" name="libersoft_logo_blue.svg" styleClass="logo"/>
+			
+			<f:verbatim><hr style="margin: 10% 0"/></f:verbatim>
+			
+			<h:outputLink value="home.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="pagina_inicial.svg" styleClass="iconeItem"/> Página Inicial</h:outputLink>
+			<h:outputLink value="livros.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="livros.svg" styleClass="iconeItem"/> Livros</h:outputLink>
+			
+			<h:outputLabel value="Seu Acervo" styleClass="menuItem menuSubtitulo"/>
+			
+			<h:outputLink value="meus_livros.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="meus_livros.svg" styleClass="iconeItem"/> Meus Livros</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="renovacao.svg" styleClass="iconeItem"/> Renovação</h:outputLink>
+			
+			<h:outputLabel value="Você" styleClass="menuItem menuSubtitulo"/>
+			
+			<h:outputLink value="meu_perfil.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="avatar_padrao.svg" styleClass="iconeItem"/> Meu Perfil</h:outputLink>
+			<h:outputLink value="login.xhtml" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="sair.svg" styleClass="iconeItem"/> Sair</h:outputLink>	
+		</div>
+
+		<div class="content">
+			<div class="barraDePesquisa">
+				<h:form class="formularioPesquisa">
+					<h:inputText id="pesquisa" styleClass="inputSearch" a:placeholder="Procurar por livros..."/>
+					<h:button value="Pesquisar" styleClass="mainbtn button2" outcome="home.xhtml"/>
+					<!-- BOTÃO QUE SERÁ USADO QUANDO A BUSCA ESTIVER PRONTA -->
+					<!-- <h:commandButton value="Pesquisar" action="PesquisaDAO" styleClass="mainbtn button2"/> -->
+					<!-- BOTÃO QUE SERÁ USADO ENQUANTO A BUSCA NÃO ESTIVER PRONTA -->
+				</h:form>
+			</div>
+			
+			<div class="recomendacoes">
+				<p>Recomendações</p>
+				<div class="livros">
+					<div class="estruturaLivro">
+						<h:outputLink value="https://google.com" target="_blank">
+							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
+							<h:outputText id="tituloLivro1" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> <br/>
+						</h:outputLink>
+						<h:outputText id="autorLivro1" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
+					</div>
+					
+					<div class="estruturaLivro">
+						<h:outputLink value="https://google.com" target="_blank">
+							<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
+							<h:outputText id="tituloLivro2" styleClass="tituloLivro" value="Código Limpo"/> <br/>
+						</h:outputLink>
+						<h:outputText id="autorLivro2" styleClass="autorLivro" value="Robert C. Martin"/>
+					</div>
+
+					<div class="estruturaLivro">
+						<h:outputLink value="https://google.com" target="_blank">
+							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
+							<h:outputText id="tituloLivro3" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> <br/>
+						</h:outputLink>
+						<h:outputText id="autorLivro3" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
+					</div>
+
+					<div class="estruturaLivro">
+						<h:outputLink value="https://google.com" target="_blank">
+							<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
+							<h:outputText id="tituloLivro4" styleClass="tituloLivro" value="Código Limpo"/> <br/>
+						</h:outputLink>
+						<h:outputText id="autorLivro4" styleClass="autorLivro" value="Robert C. Martin"/>
+					</div>
+					
+					<div class="estruturaLivro">
+						<h:outputLink value="https://google.com" target="_blank">
+							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
+							<h:outputText id="tituloLivro5" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> <br/>
+						</h:outputLink>
+						<h:outputText id="autorLivro5" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="meusLivros">
+				<p>Meus Livros</p>
+				<div class="livros">
+					<div class="estruturaLivro">
+						<h:outputLink value="https://google.com" target="_blank">						
+							<h:graphicImage library="imgs/books" name="codigo_limpo.jpg" class="livro"/>
+							<h:outputText id="tituloLivro6" styleClass="tituloLivro" value="Código Limpo"/> <br/>
+						</h:outputLink>
+						<h:outputText id="autorLivro6" styleClass="autorLivro" value="Robert C. Martin"/>
+					</div>
+					
+					<div class="estruturaLivro">
+						<h:outputLink value="https://google.com" target="_blank">
+							<h:graphicImage library="imgs/books" name="sistemas_operacionais_andrew_tenembaum.jpg" class="livro"/>
+							<h:outputText id="tituloLivro7" styleClass="tituloLivro" value="Sistemas Operacionais Modernos - 2ª Edição"/> <br/>
+						</h:outputLink>
+						<h:outputText id="autorLivro7" styleClass="autorLivro" value="Andrew S. Tenembaum"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</h:body>
+</html>

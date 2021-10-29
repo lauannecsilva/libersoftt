@@ -6,137 +6,156 @@ font-family: "Roboto-Medium"; src: url("#{resource['fonts:Roboto-Medium.ttf']}")
 @font-face {
 font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}") format("truetype");
 }
+	
+/* CONFIGURAÇÕES GERAIS */	
 
+	* {
+		font-family: 'Roboto-Regular', sans-serif;
+	}
+	
+	h1 {
+		color: #013974;
+		text-align: center;
+	}
+	
+	hr {
+		 margin-top:20px;
+		 margin-bottom:20px;
+	}
+	
+	.body {
+		position:relative;
+		background-color: #013974;
+	}
+	
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+	
+	::-webkit-scrollbar-track {
+	  background-color: #fff;
+	}
+	
+	::-webkit-scrollbar-thumb {
+	  background: #b3995d; 
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+	  background: #a68e56; 
+	}
+	
+	::-webkit-scrollbar-thumb:active {
+	  background: #998350; 
+	}
+	
+/* CONFIGURAÇÕES GERAIS */
 
-* {
-	font-family: 'Roboto-Regular', sans-serif;
-}
+/* CONFIGURAÇÕES DOS CONTEÚDOS */
+	.conteudo {
+		display: flex;
+	    transform: translate(-50%, -50%);
+	    top: 50%;
+	    left: 50%;
+	    margin-right: -50%;
+	    position: absolute;
+	    padding-top: 100px;
+	    align-items: center;
+	    text-align: center;
+	    margin-top: 40vh;
+	}
+/* CONFIGURAÇÕES DOS CONTEÚDOS */
 
-h1 {
-	color: #013974;
-	text-align: center;
-}
+/* CONFIGURAÇÕES DO CONTEÚDO À ESQUERDA */
+	.descricao {
+		text-align: left;
+		width: 540px;
+		font-size: 24px;
+		color: #fff;
+	}
+	
+	.logo {
+		width:350px;
+		height:auto;
+	}
+/* CONFIGURAÇÕES DO CONTEÚDO À ESQUERDA */
 
-hr {
-	 margin-top:20px;
-	 margin-bottom:20px;
-}
+/* CONFIGURAÇÕES DO CONTEÚDO À DIREITA */	
+	.login{
+		position: relative;  
+		width: 400px;
+		height:350px;
+	    border-radius: 5px;
+		background-color: #fff;
+		padding: 15px;
+		box-shadow: 0px 0px 15px #001326;  
+	}
+/* CONFIGURAÇÕES DO CONTEÚDO À DIREITA */
 
-.body {
-	position:relative;
-	background-color: #013974;
-}
+/* CONFIGURAÇÕES DOS INPUTS */	
+	.inputText:focus {
+		outline: none;
+	    border-color: #9ecaed;
+		box-shadow: 0 0 10px #9ecaed;
+	}
+	
+	.ui-inputmask, .inputText {
+		width: 100%;
+		font-size: 16px !important;
+		padding: 12px 16px !important;
+		margin-top: 3px !important;
+		margin-bottom: 8px !important;
+		border: 1px solid #ccc !important;
+		border-radius: 5px !important;
+	}
+	
+	.inputText {
+		margin: 8px 0px !important;
+	}
+	
+	::placeholder {
+		color: #8d949e !important;
+	}
+/* CONFIGURAÇÕES DOS INPUTS */
 
-/* RIGHT CONTENT SETTINGS */
-.conteudo {
-	display: flex;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    position: absolute;
-    padding-top: 100px;
-    align-items: center;
-    text-align: center;
-    margin-top: 40vh;
-}
-
-.login{
-	position: relative;  
-	width: 400px;
-	height:350px;
-    border-radius: 5px;
-	background-color: #fff;
-	padding: 15px;
-	box-shadow: 0px 0px 15px #001326;  
-}
-/* RIGHT CONTENT SETTINGS */
-
-/* LEFT CONTENT SETTINGS */
-.description {
-	text-align: left;
-	width: 540px;
-	font-size: 24px;
-	color: #fff;
-}
-
-.logo {
-	width:350px;
-	height:auto;
-}
-/* LEFT CONTENT SETTINGS */
-
-/* INPUTS SETTINGS */
-.inputText {
-	font-size: 16px;
-	width: 100%;
-	padding: 12px 16px;
-	margin: 8px 0px;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-}
-
-.inputText:focus {
-	outline: none;
-    border-color: #9ecaed;
-	box-shadow: 0 0 10px #9ecaed;
-}
-
-.ui-inputmask {
-	width: 100%;
-	font-size: 16px !important;
-	padding: 12px 16px !important;
-	margin-top: 3px !important;
-	margin-bottom: 8px !important;
-	border: 1px solid #ccc !important;
-	border-radius: 5px !important;
-}
-
-::placeholder {
-	color: #8d949e !important;
-}
-/* INPUTS SETTINGS */
-
-/* BUTTONS SETTINGS */
-.mainbtn {
-	font-family: 'Roboto-Medium', sans-serif;
-	background-color: #013974;
-	color: white;
-	padding: 12px 12px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	box-sizing: border-box;
-}
-
-.loginButton {
-	letter-spacing: 0.03em;
-	font-size: 22px;
-	width: 100%;
-	margin-top: 8px;
-	margin-bottom: 15px;
-}
-
-.loginButton:hover {
-	background-color: #013266;
-}
-
-.loginButton:active {
-	background-color: #012c59;
-}
-
-.newAccountButton {
-	letter-spacing: 0.03em;
-	font-size: 18px;
-	background-color: #b3995d;
-}
-
-.newAccountButton:hover {
-	background-color: #a68e56;
-}
-
-.newAccountButton:active {
-	background-color: #998350;
-}
-/* BUTTONS SETTINGS */
+/* CONFIGURAÇÕES DOS BOTÕES */
+	.mainbtn {
+		font-family: 'Roboto-Medium', sans-serif;
+		background-color: #013974;
+		color: white;
+		padding: 12px 12px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		box-sizing: border-box;
+	}
+	
+	.button1 {
+		letter-spacing: 0.03em;
+		font-size: 22px;
+		width: 100%;
+		margin-top: 8px;
+		margin-bottom: 15px;
+	}
+	
+	.button1:hover {
+		background-color: #013266;
+	}
+	
+	.button1:active {
+		background-color: #012c59;
+	}
+	
+	.button2 {
+		letter-spacing: 0.03em;
+		font-size: 18px;
+		background-color: #b3995d;
+	}
+	
+	.button2:hover {
+		background-color: #a68e56;
+	}
+	
+	.button2:active {
+		background-color: #998350;
+	}
+/* CONFIGURAÇÕES DOS BOTÕES */

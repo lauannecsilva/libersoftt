@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title>LiberSoft</title>
+		<h:outputStylesheet library="css" name="cadastro.css"/>
+	</h:head>
+	<h:body styleClass="body">
+		
+		<h:panelGrid columns="1" styleClass="conteudo">			
+	
+				<h:form styleClass="cadastro">
+				
+					<h:panelGroup layout="block" styleClass="cadastroTopo">
+						<h:outputLabel value="Cadastro" styleClass="titulo"/>
+						<f:verbatim><br/></f:verbatim>
+						<h:outputLabel value="Insira as informações da nova pessoa estudante." styleClass="subtitulo"/>
+						<f:verbatim><hr/></f:verbatim>
+					</h:panelGroup>
+					
+					<p:inputText styleClass="inputText" value="#{Aluno.nome}" a:placeholder="Nome Completo"/>
+					<p:inputText styleClass="inputText" value="#{Aluno.email}" a:placeholder="Email"/>
+					<p:inputMask styleClass="inputText" value="#{Aluno.telefone}" mask="(99) 9 9999-9999" a:placeholder="Celular"/>
+					<p:inputMask styleClass="inputText" value="#{Aluno.cpf}" mask="999.999.999-99" a:placeholder="CPF"/>
+					
+					<h:commandButton value="Cadastre" action="CadastroDAO" styleClass="button1 mainbtn"/>
+					
+				</h:form>
+				
+			</h:panelGrid>
+	</h:body>
+</html>
