@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>LiberSoft</title>
+	<h:outputStylesheet library="css" name="templateBibliotecario.css"/>
+	<h:outputScript library="js" name="templateBibliotecario.js" />
+</h:head>	
+	
+	<h:body styleClass="body">
+  	 
+  	 	<h:form styleClass="menuLateral">
+			<h:graphicImage library="imgs" name="libersoft_logo_blue.svg" styleClass="logo"/>
+			<f:verbatim><hr/></f:verbatim>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="pagina_inicial.svg" styleClass="iconeItem"/> Página Inicial</h:outputLink>
+			
+			<h:outputLabel value="Seu Acervo" styleClass="menuItem menuSubtitulo"/>
+			
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="gerenciar_Livros.svg" styleClass="iconeItem"/> Gerenciar Livros</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="gerenciar_Alunos.svg" styleClass="iconeItem"/> Gerenciar Alunos</h:outputLink>
+			<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">
+			<h:graphicImage library="imgs" name="gerenciar_Emprestimo.svg" styleClass="iconeItem"/> Gerenciar Emprestimo</h:outputLink>
+		
+		</h:form>
+		
+		<div class="topnav">
+			<div class="topnavMeio">
+				<h:form>
+					<h:inputText id="pesquisa" styleClass="inputSearch" a:placeholder="Procurar por livros..."/>
+					<!-- BOTÃO QUE SERÁ USADO QUANDO A BUSCA ESTIVER PRONTA -->
+					<!-- <h:commandButton value="Pesquisar" action="PesquisaDAO" styleClass="mainbtn button2"/>  -->
+					<!-- BOTÃO QUE SERÁ USADO ENQUANTO A BUSCA NÃO ESTIVER PRONTA -->
+					<h:button value="Pesquisar" styleClass="mainbtn button2" outcome="login.xhtml"/>
+				</h:form>
+			</div>
+			
+			<div class="topnavDireita">
+				<div class="menuPerfil" onclick="trocar('menuPerfil-dropdown')">
+					<h:graphicImage library="imgs" name="avatar_padrao.svg" styleClass="avatar"/>
+					<h:graphicImage library="imgs" name="flecha_baixo.svg" styleClass="selecao"/>
+					
+					<div id="menuPerfil-dropdown">
+						<h:outputLink value="https://google.com" target="_blank" styleClass="menuItem">Meu Perfil</h:outputLink>
+						<h:outputLink value="login.xhtml" styleClass="menuItem">Sair</h:outputLink>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+		
+		</div>
+		
+	</h:body>
+</html>
