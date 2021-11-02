@@ -14,13 +14,12 @@
 					<label class="subtitulo">Insira as informações do novo usuário.</label><hr/>				
 				</div>
 				
-				<form action="AlunoServlet" method="post">
-					<input type="text" id="nomeCompleto" class="inputText" placeholder="Nome Completo">
-					<input type="text" id="senha" class="inputText" placeholder="Senha">
-					<input type="text" id="email" class="inputText" placeholder="Email">
-					<input type="text" id="telefone" class="inputText" placeholder="Telefone">
-					<input type="text" id="cpf" class="inputText" placeholder="CPF">
-					<input type="text" id="endereco" class="inputText" placeholder="Endereço">
+				<form action="AlunoCadastro" method="post">
+					<input type="text" name="nomeCompleto" class="inputText" placeholder="Nome Completo">
+					<input type="text" name="email" class="inputText" placeholder="Email">
+					<input type="text" name="matricula" class="inputText" placeholder="Matricula">
+					<input type="text" name="telefone" class="inputText" placeholder="Telefone">
+					<input type="text" name="senha" class="inputText" placeholder="Senha">
 					
 					<input type="submit" class="button1 mainbtn" value="Cadastre">
 				</form>

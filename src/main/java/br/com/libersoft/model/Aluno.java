@@ -5,9 +5,11 @@ public class Aluno {
 	private int id;
 	private String nome;
 	private String email;
+	private String matricula;
 	private String telefone;
 	private String senha;
 	private int idEndereco;
+	private int idBibliotecario;
 	
 	public int getId() {
 		return id;
@@ -26,6 +28,12 @@ public class Aluno {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
 	}
 	public String getTelefone() {
 		return telefone;
@@ -51,5 +59,4 @@ public class Aluno {
 	public void setIdBibliotecario(int idBibliotecario) {
 		this.idBibliotecario = idBibliotecario;
 	}
-	private int idBibliotecario;
 }

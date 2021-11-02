@@ -5,8 +5,8 @@
     <welcome-file>login.xhtml</welcome-file>
   </welcome-file-list>
   <context-param>
-  	<param-name>primefaces.THEME</param-name>
-  	<param-value>nova-light</param-value>
+    <param-name>primefaces.THEME</param-name>
+    <param-value>nova-light</param-value>
   </context-param>
   <servlet>
     <servlet-name>Faces Servlet</servlet-name>
@@ -17,50 +17,40 @@
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>/faces/*</url-pattern>
   </servlet-mapping>
-  
-  
   <context-param>
-        <param-name>jdbcURL</param-name>
-        <param-value>jdbc:mysql://localhost:3306/libersoft</param-value>
-    </context-param>
- 
-    <context-param>
-        <param-name>jdbcUsuario</param-name>
-        <param-value>root</param-value>
-    </context-param>
- 
-    <context-param>
-        <param-name>jdbcSenha</param-name>
-        <param-value>1311</param-value>
-    </context-param>
- 
-    <servlet>
-        <servlet-name>AlunoServlet</servlet-name>
-        <servlet-class>libersoft.Servlet.AlunoServlet</servlet-class>
-    </servlet>
- 
-    <servlet-mapping>
-        <servlet-name>AlunoServlet</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
- 
-    <error-page>
-        <exception-type>java.lang.Exception</exception-type>
-        <location>/Error.jsp</location>
-    </error-page>
-  
-  
+    <param-name>jdbcURL</param-name>
+    <param-value>jdbc:mysql://localhost:3306/libersoft</param-value>
+  </context-param>
   <context-param>
-        <description>State saving method: 'client' or 'server' (=default). See JSF Specification 2.5.2</description>
-        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
-        <param-value>client</param-value>
-    </context-param>
-    <context-param>
-        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
-        <param-value>resources.application</param-value>
-    </context-param>
-    <listener>
-        <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
-    </listener>
-  
+    <param-name>jdbcUsuario</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>jdbcSenha</param-name>
+    <param-value>1311</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>AlunoServlet</servlet-name>
+    <servlet-class>libersoft.Servlet.AlunoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlunoServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/Error.jsp</location>
+  </error-page>
+  <context-param>
+    <description>State saving method: 'client' or 'server' (=default). See JSF Specification 2.5.2</description>
+    <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+    <param-value>client</param-value>
+  </context-param>
+  <context-param>
+    <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+    <param-value>resources.application</param-value>
+  </context-param>
+  <listener>
+    <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
+  </listener>
 </web-app>
