@@ -25,12 +25,13 @@
 						<f:verbatim><hr/></f:verbatim>
 					</h:panelGroup>
 					
-					<p:inputText styleClass="inputText" value="#{Aluno.nome}" a:placeholder="Nome Completo"/>
-					<p:inputText styleClass="inputText" value="#{Aluno.email}" a:placeholder="Email"/>
-					<p:inputMask styleClass="inputText" value="#{Aluno.telefone}" mask="(99) 9 9999-9999" a:placeholder="Celular"/>
-					<p:inputMask styleClass="inputText" value="#{Aluno.cpf}" mask="999.999.999-99" a:placeholder="CPF"/>
+					<p:inputText styleClass="inputText" name="nome" value="#{aluno.nome}" a:placeholder="Nome Completo"/>
+					<p:inputText styleClass="inputText" name="email" value="#{aluno.email}" a:placeholder="Email"/>
+					<p:inputMask styleClass="inputText" name="telefone" value="#{aluno.telefone}" mask="(99) 9 9999-9999" a:placeholder="Celular"/>
+					<p:inputText styleClass="inputText" name="matricula" value="#{aluno.matricula}" a:placeholder="Matrícula"/>
+					<p:inputText styleClass="inputText" name="senha" value="#{aluno.senha}" a:placeholder="Senha"/>
 					
-					<h:commandButton value="Cadastre" action="CadastroDAO" styleClass="button1 mainbtn"/>
+					<h:commandButton value="Cadastre" action="AlunoCadastro" styleClass="button1 mainbtn"/>
 					
 				</h:form>
 				

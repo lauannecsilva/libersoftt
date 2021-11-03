@@ -1,16 +1,10 @@
-@charset "ISO-8859-1";
-
-@font-face {
-font-family: "Roboto-Medium"; src: url("#{resource['fonts:Roboto-Medium.ttf']}") format("truetype");
-}
-@font-face {
-font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 /* CONFIGURAÇÕES GERAIS */
 
 	* {
-		font-family: 'Roboto-Regular', sans-serif;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
 		padding: 0;
 		margin: 0;
 		color: white;
@@ -21,10 +15,15 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	}
 	body {
 		height: 100%;
+		background-color: #013974;
 	}
 	
 	p {
 		font-size: 1.5vw;
+	}
+	
+	a {
+		text-decoration: none;
 	}
 	
 	::-webkit-scrollbar {
@@ -53,7 +52,6 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 
 	.wrapper {
 		display: flex;
-		flex-wrap: wrap;
 		height: 100%;
 	}
 	
@@ -106,7 +104,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	}
 	
 	.menuSubtitulo {
-		font-weight: bold;
+		font-weight: 500;
 	}
 	
 	.menuSubtitulo:hover {
@@ -147,7 +145,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	}
 	
 	.mainbtn {
-		font-weight: bold;
+		font-weight: 500;
 		background-color: #013974;
 		color: white;
 		padding: 0 3%;
@@ -181,7 +179,7 @@ font-family: "Roboto-Regular"; src: url("#{resource['fonts:Roboto-Regular.ttf']}
 	.livros {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 4em;
+		gap: 2em;
 		padding: 1.5% 0;
 	}
 	

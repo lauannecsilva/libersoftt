@@ -17,26 +17,6 @@
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>/faces/*</url-pattern>
   </servlet-mapping>
-  <context-param>
-    <param-name>jdbcURL</param-name>
-    <param-value>"jdbc:mysql://localhost/libersoft?useJDBCCompliantTimezoneShift=true, useLegacyDatetimeCode=false&amp;serverTimezone=UTC"</param-value>
-  </context-param>
-  <context-param>
-    <param-name>jdbcUsuario</param-name>
-    <param-value>root</param-value>
-  </context-param>
-  <context-param>
-    <param-name>jdbcSenha</param-name>
-    <param-value>123@start</param-value>
-  </context-param>
-  <servlet>
-    <servlet-name>AlunoServlet</servlet-name>
-    <servlet-class>libersoft.Servlet.AlunoServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AlunoServlet</servlet-name>
-    <url-pattern>/</url-pattern>
-  </servlet-mapping>
   <error-page>
     <exception-type>java.lang.Exception</exception-type>
     <location>/Error.jsp</location>
