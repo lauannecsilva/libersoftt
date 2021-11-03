@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* CONFIGURA합ES GERAIS */
+
+	* {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		padding: 0;
+		margin: 0;
+		color: white;
+	}
+	
+	body {
+		background-color: #013974;
+	}
+	
+	p {
+		font-size: 1.5vw;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+	
+	::-webkit-scrollbar-track {
+	  background-color: #fff;
+	}
+	
+	::-webkit-scrollbar-thumb {
+	  background: #b3995d; 
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+	  background: #a68e56; 
+	}
+	
+	::-webkit-scrollbar-thumb:active {
+	  background: #998350; 
+	}
+
+/* CONFIGURA합ES GERAIS */
+
+/* CONFIGURA플O DA FLEXBOX BASE (BASEADO NO 'CONTENT-SIDEBAR' DO KEVIN POWELL) */
+
+	.wrapper {
+		display: flex;
+		height: 100%;
+	}
+	
+	.wrapper >*.left-navbar {
+		flex: 1 1 15%;
+	}
+	
+	.wrapper >*.content {
+		flex: 1 1 85%;
+	}
+	
+	.left-navbar {
+		padding: 1%;
+		background-color: white;
+	}
+	
+	.content {
+		padding: 1%;
+		background-color: #013974;
+	}
+
+/* CONFIGURA플O DA FLEXBOX BASE (BASEADO NO 'CONTENT-SIDEBAR' DO KEVIN POWELL) */
+
+/* CONFIGURA합ES DA BARRA DE NAVEGA플O */
+
+	.logo {
+		width: auto;
+		height: auto;
+	}
+	
+	.iconeItem {
+		width: 10%;
+		height: auto;
+		filter: invert(51%) sepia(0%) saturate(2817%) hue-rotate(201deg) brightness(100%) contrast(79%);
+	}
+	
+	.menuItem {
+		padding: 3% 4% 3% 7%;
+		margin: 10% 0;
+		text-decoration: none;
+		font-size: 1.5vw;
+		color: #818181;
+		display: block;
+		border-radius: 0.3vw;
+	}
+	
+	.menuItem:hover {
+		color: #818181;
+		background-color: #f1f1f1;
+	}
+	
+	.menuSubtitulo {
+		font-weight: 500;
+	}
+	
+	.menuSubtitulo:hover {
+		background: white;
+	}
+
+/* CONFIGURA합ES DA BARRA DE NAVEGA플O */
+
+/* CONFIGURA합ES DA BARRA DE PESQUISA */
+
+	.barraDePesquisa {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 4%;
+	}
+	
+	.formularioPesquisa {
+		display: flex;
+	}
+	
+	.inputSearch {
+		font-size: 1vw !important;
+		width: 25vw !important;
+		padding: 2.6% 3% !important;
+		border: 1px solid #ccc !important;
+		border-radius: 0.3vw 0 0 0.3vw !important;
+		cursor: text;
+		color: #818181;
+	}
+	
+	.inputSearch:focus {
+		outline: none !important;
+	    border-color: #9ecaed !important;
+	}
+	
+	::placeholder {
+		color: #8d949e !important;
+	}
+	
+	.mainbtn {
+		font-weight: 500;
+		background-color: #013974;
+		color: white;
+		padding: 0 3%;
+		border: none;
+		border-radius: 0 0.3vw 0.3vw 0;
+		cursor: pointer;
+	}
+	
+	.button2 {
+		letter-spacing: 0.03em;
+		font-size: 1vw;
+		background-color: #b3995d;
+	}
+	
+	.button2:hover {
+		background-color: #a68e56;
+	}
+	
+	.button2:active {
+		background-color: #998350;
+	}
+
+/* CONFIGURA합ES DA BARRA DE PESQUISA */
+
+/* CONFIGURA합ES DAS ESTRUTURAS DOS LIVROS */
+
+	.recomendacoes, .meusLivros {
+		margin: 0 5% 6% 5%;
+	}
+	
+	.livros {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2em;
+		padding: 1.5% 0;
+	}
+	
+	.estruturaLivro {
+		width: 12vw;
+		height: 12vw;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 0.3vw;
+	}
+	
+	.livro {
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+	}
+	
+	.tituloLivro {
+		font-size: 1vw;
+	}
+	
+	.autorLivro {
+		font-size: 0.7vw;
+		color: #a7a7a7;
+	}
+
+/* CONFIGURA합ES DAS ESTRUTURAS DOS LIVROS */

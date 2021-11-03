@@ -23,7 +23,7 @@ public class AlunoCadastro extends HttpServlet {
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String url = "/login.jsp";
+		String url = "/WEB-INF/view/home.jsp";
 		
 		String nome = request.getParameter("nome");
 		String email = request.getParameter("email");
@@ -46,7 +46,7 @@ public class AlunoCadastro extends HttpServlet {
 		aluno.setIdBibliotecario(idBibliotecario);
 		aluno.setIdEndereco(idEndereco);
 		
-		if (url == "/login.jsp") {
+		if (url == "/WEB-INF/view/home.jsp") {
 			alunoDao.save(aluno);
 		}
 		
