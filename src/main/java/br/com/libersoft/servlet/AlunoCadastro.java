@@ -22,15 +22,17 @@ public class AlunoCadastro extends HttpServlet {
 		doPost(request, response);
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url = "/faces/home.xhtml";
 		
-		String nome = request.getParameter("nomeCompleto");
+		String url = "/login.jsp";
+		
+		String nome = request.getParameter("nome");
 		String email = request.getParameter("email");
-		String matricula = request.getParameter("matricula");
 		String telefone = request.getParameter("telefone");
+		String matricula = request.getParameter("matricula");
 		String senha = request.getParameter("senha");
 		int idBibliotecario = 1;
 		int idEndereco = 1;
+		String erro = request.getParameter("erro");
 		
 		AlunoDAO alunoDao = new AlunoDAO();
 		Aluno aluno = new Aluno();
@@ -44,7 +46,11 @@ public class AlunoCadastro extends HttpServlet {
 		aluno.setIdBibliotecario(idBibliotecario);
 		aluno.setIdEndereco(idEndereco);
 		
-		alunoDao.save(aluno);
+		if (url == "/login.jsp") {
+			alunoDao.save(aluno);
+		}
+		
+		request.setAttribute("aluno", aluno);
 		
 		getServletContext()
 		.getRequestDispatcher(url)

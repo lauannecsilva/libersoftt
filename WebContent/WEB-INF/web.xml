@@ -19,7 +19,7 @@
   </servlet-mapping>
   <context-param>
     <param-name>jdbcURL</param-name>
-    <param-value>jdbc:mysql://localhost:3306/libersoft</param-value>
+    <param-value>"jdbc:mysql://localhost/libersoft?useJDBCCompliantTimezoneShift=true, useLegacyDatetimeCode=false&amp;serverTimezone=UTC"</param-value>
   </context-param>
   <context-param>
     <param-name>jdbcUsuario</param-name>
@@ -27,7 +27,7 @@
   </context-param>
   <context-param>
     <param-name>jdbcSenha</param-name>
-    <param-value>1311</param-value>
+    <param-value>123@start</param-value>
   </context-param>
   <servlet>
     <servlet-name>AlunoServlet</servlet-name>

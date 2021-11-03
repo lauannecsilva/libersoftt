@@ -1,7 +1,10 @@
 package br.com.libersoft.model;
 
-public class Aluno {
+import java.io.Serializable;
 
+public class Aluno implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String nome;
 	private String email;
@@ -10,6 +13,27 @@ public class Aluno {
 	private String senha;
 	private int idEndereco;
 	private int idBibliotecario;
+	
+	public Aluno() {
+		this.nome = "";
+		this.email = "";
+		this.matricula = "";
+		this.telefone = "";
+		this.senha = "";
+		this.idEndereco = 0;
+		this.idBibliotecario = 0;
+	}
+	
+	public Aluno(String nome, String email, String matricula, String telefone, 
+			String senha, int idEndereco, int idBibliotecario) {
+		this.setNome(nome);
+		this.setEmail(email);
+		this.setMatricula(matricula);
+		this.setTelefone(telefone);
+		this.setSenha(senha);
+		this.setIdEndereco(idEndereco);
+		this.setIdBibliotecario(idBibliotecario);
+	}
 	
 	public int getId() {
 		return id;
